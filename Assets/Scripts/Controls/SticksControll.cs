@@ -12,6 +12,7 @@ public class SticksControll : MonoBehaviour {
 	private float lastFrameTime = 0.0f;	//Время последнего выполнения операции
 	public float leftStickAngle, rightStickAngle;	//Углы поворота стиков
 	public float stickSpeed = 5.0f;
+	public GameObject santa;
 	
 	void Start() {
 		leftStickAngle = leftStickAngles.x;
@@ -52,5 +53,13 @@ public class SticksControll : MonoBehaviour {
 
 		leftStick.transform.rotation = Quaternion.Euler (leftStick.transform.rotation.x, leftStick.transform.rotation.y, leftStickAngle);
 		rightStick.transform.rotation = Quaternion.Euler (leftStick.transform.rotation.x, leftStick.transform.rotation.y, rightStickAngle);
+	}
+
+	public void Hit(Vector2 power, GameObject stick) {
+		if (stick == leftStick)
+			if (leftStickAngle >= leftStickAngles.y || leftStickAngle <= leftStickAngles.x) return;
+		if (stick == rightStick)
+			if (rightStickAngle >= rightStickAngles.y || rightStickAngle <= rightStickAngles.x) return;
+		santa.GetComponent<Rigidbody2D> ().AddForce (power);
 	}
 }
