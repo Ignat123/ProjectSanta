@@ -13,6 +13,10 @@ public class SticksControll : MonoBehaviour {
 	public float leftStickAngle, rightStickAngle;	//Углы поворота стиков
 	public float stickSpeed = 5.0f;
 	public GameObject santa;
+	public GameObject leftStickSolid, rightStickSolid;
+	private bool isCollisionIgnored = false;
+	private float lastCollisionIgnoreTime = 0f;
+
 	
 	void Start() {
 		leftStickAngle = leftStickAngles.x;
@@ -27,7 +31,17 @@ public class SticksControll : MonoBehaviour {
 			isLeftStickPressed = true;
 		if (Input.GetKey ("right"))
 			isRightStickPressed = true;
+		if (isCollisionIgnored)
+			DisableIgnoreCollision ();
 		MoveSticks ();
+	}
+
+	void DisableIgnoreCollision(){ 
+		if (lastCollisionIgnoreTime + 0.5f < Time.time) { 
+			isCollisionIgnored = false;
+			Physics2D.IgnoreCollision(santa.GetComponent<Collider2D>(), leftStickSolid.GetComponent<Collider2D>(), false);
+			Physics2D.IgnoreCollision(santa.GetComponent<Collider2D>(), rightStickSolid.GetComponent<Collider2D>(), false);
+		}
 	}
 
 	void MoveSticks() {
@@ -55,11 +69,30 @@ public class SticksControll : MonoBehaviour {
 		rightStick.transform.rotation = Quaternion.Euler (leftStick.transform.rotation.x, leftStick.transform.rotation.y, rightStickAngle);
 	}
 
-	public void Hit(Vector2 power, GameObject stick) {
-		if (stick == leftStick)
-			if (leftStickAngle >= leftStickAngles.y || leftStickAngle <= leftStickAngles.x) return;
-		if (stick == rightStick)
-			if (rightStickAngle >= rightStickAngles.y || rightStickAngle <= rightStickAngles.x) return;
+	public void Hit(Vector2 power, GameObject stick, GameObject solid) {
+		if (stick == leftStick) {
+			if (leftStickAngle >= leftStickAngles.y || leftStickAngle <= leftStickAngles.x)
+				return;
+			power = CalculatePower(leftStickAngle - leftStickAngles.x);
+		}
+		if (stick == rightStick) {
+			if (rightStickAngle >= rightStickAngles.y || rightStickAngle <= rightStickAngles.x)
+				return;
+			power = CalculatePower(rightStickAngle - rightStickAngles.x);
+			power.x *= -1;
+		}
+		Physics2D.IgnoreCollision(santa.GetComponent<Collider2D>(), solid.GetComponent<Collider2D>());
+		isCollisionIgnored = true; 
+		lastCollisionIgnoreTime = Time.time;
+		Debug.Log (power);
 		santa.GetComponent<Rigidbody2D> ().AddForce (power);
+	}
+
+	public Vector2 CalculatePower(float angle) {
+		if (angle < 40)
+			return new Vector2 (force / 2, force / 4);
+		if (angle < 80)
+			return new Vector2 ( force / 5, force / 3);
+		return new Vector2( force / 10, force / 2);
 	}
 }
