@@ -84,7 +84,6 @@ public class SticksControll : MonoBehaviour {
 		Physics2D.IgnoreCollision(santa.GetComponent<Collider2D>(), solid.GetComponent<Collider2D>());
 		isCollisionIgnored = true; 
 		lastCollisionIgnoreTime = Time.time;
-		Debug.Log (power);
 		santa.GetComponent<Rigidbody2D> ().AddForce (power);
 	}
 
