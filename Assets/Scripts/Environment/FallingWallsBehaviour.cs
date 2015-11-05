@@ -16,6 +16,7 @@ public class FallingWallsBehaviour : MonoBehaviour {
 		if (Time.time < lastFrameTime + frameTick) return;
 		lastFrameTime = Time.time;
 		moveWall ();
+		angle = wallAngles.x;
 	}
 
 	void moveWall(){
