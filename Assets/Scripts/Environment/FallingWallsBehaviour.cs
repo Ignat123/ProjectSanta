@@ -12,11 +12,14 @@ public class FallingWallsBehaviour : MonoBehaviour {
 	private float angle;
 	public bool isWallFall = false;
 
+	void Start() {
+		angle = wallAngles.y;
+	}
+
 	void Update () {
 		if (Time.time < lastFrameTime + frameTick) return;
 		lastFrameTime = Time.time;
 		moveWall ();
-		angle = wallAngles.x;
 	}
 
 	void moveWall(){
