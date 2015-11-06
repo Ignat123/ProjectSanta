@@ -7,7 +7,8 @@ public class SpeedUpBehaviour : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D collision) {
 		if (collision.gameObject.name == "Santa") {
-			collision.gameObject.GetComponent<Rigidbody2D>().AddForce(power);
+			if (collision.gameObject.GetComponent<Rigidbody2D>().velocity.y / power.y > 0)
+				collision.gameObject.GetComponent<Rigidbody2D>().AddForce(power);
 		}
 	}
 }
