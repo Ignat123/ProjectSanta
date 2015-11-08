@@ -1,54 +1,54 @@
 fileFormatVersion: 2
-guid: 4c696f7b7a8109a4980d4daa02d0b557
-timeCreated: 1447007272
+guid: 458b0fea791492b4082f8aa17e83ac9c
+timeCreated: 1447016175
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: santa_on_fire_0
-    21300002: santa_on_fire_1
-    21300004: santa_on_fire_2
-    21300006: santa_on_fire_3
-    21300008: santa_on_fire_4
-    21300010: santa_on_fire_5
-    21300012: santa_on_fire_6
-    21300014: santa_on_fire_7
-    21300016: santa_on_fire_8
-    21300018: santa_on_fire_9
-    21300020: santa_on_fire_10
-    21300022: santa_on_fire_11
-    21300024: santa_on_fire_12
-    21300026: santa_on_fire_13
-    21300028: santa_on_fire_14
-    21300030: santa_on_fire_15
-    21300032: santa_on_fire_16
-    21300034: santa_on_fire_17
-    21300036: santa_on_fire_18
-    21300038: santa_on_fire_19
-    21300040: santa_on_fire_20
-    21300042: santa_on_fire_21
-    21300044: santa_on_fire_22
-    21300046: santa_on_fire_23
-    21300048: santa_on_fire_24
-    21300050: santa_on_fire_25
-    21300052: santa_on_fire_26
-    21300054: santa_on_fire_27
-    21300056: santa_on_fire_28
-    21300058: santa_on_fire_29
-    21300060: santa_on_fire_30
-    21300062: santa_on_fire_31
-    21300064: santa_on_fire_32
-    21300066: santa_on_fire_33
-    21300068: santa_on_fire_34
-    21300070: santa_on_fire_35
-    21300072: santa_on_fire_36
-    21300074: santa_on_fire_37
-    21300076: santa_on_fire_38
-    21300078: santa_on_fire_39
-    21300080: santa_on_fire_40
-    21300082: santa_on_fire_41
-    21300084: santa_on_fire_42
-    21300086: santa_on_fire_43
-    21300088: santa_on_fire_44
+    21300000: santa_on_fire_785_571_0
+    21300002: santa_on_fire_785_571_1
+    21300004: santa_on_fire_785_571_2
+    21300006: santa_on_fire_785_571_3
+    21300008: santa_on_fire_785_571_4
+    21300010: santa_on_fire_785_571_5
+    21300012: santa_on_fire_785_571_6
+    21300014: santa_on_fire_785_571_7
+    21300016: santa_on_fire_785_571_8
+    21300018: santa_on_fire_785_571_9
+    21300020: santa_on_fire_785_571_10
+    21300022: santa_on_fire_785_571_11
+    21300024: santa_on_fire_785_571_12
+    21300026: santa_on_fire_785_571_13
+    21300028: santa_on_fire_785_571_14
+    21300030: santa_on_fire_785_571_15
+    21300032: santa_on_fire_785_571_16
+    21300034: santa_on_fire_785_571_17
+    21300036: santa_on_fire_785_571_18
+    21300038: santa_on_fire_785_571_19
+    21300040: santa_on_fire_785_571_20
+    21300042: santa_on_fire_785_571_21
+    21300044: santa_on_fire_785_571_22
+    21300046: santa_on_fire_785_571_23
+    21300048: santa_on_fire_785_571_24
+    21300050: santa_on_fire_785_571_25
+    21300052: santa_on_fire_785_571_26
+    21300054: santa_on_fire_785_571_27
+    21300056: santa_on_fire_785_571_28
+    21300058: santa_on_fire_785_571_29
+    21300060: santa_on_fire_785_571_30
+    21300062: santa_on_fire_785_571_31
+    21300064: santa_on_fire_785_571_32
+    21300066: santa_on_fire_785_571_33
+    21300068: santa_on_fire_785_571_34
+    21300070: santa_on_fire_785_571_35
+    21300072: santa_on_fire_785_571_36
+    21300074: santa_on_fire_785_571_37
+    21300076: santa_on_fire_785_571_38
+    21300078: santa_on_fire_785_571_39
+    21300080: santa_on_fire_785_571_40
+    21300082: santa_on_fire_785_571_41
+    21300084: santa_on_fire_785_571_42
+    21300086: santa_on_fire_785_571_43
+    21300088: santa_on_fire_785_571_44
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -94,453 +94,453 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: santa_on_fire_0
+    - name: santa_on_fire_785_571_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 5468
-        width: 780
-        height: 682
+        y: 5136
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_1
+    - name: santa_on_fire_785_571_1
       rect:
         serializedVersion: 2
-        x: 780
-        y: 5468
-        width: 780
-        height: 682
+        x: 785
+        y: 5136
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_2
+    - name: santa_on_fire_785_571_2
       rect:
         serializedVersion: 2
-        x: 1560
-        y: 5468
-        width: 780
-        height: 682
+        x: 1570
+        y: 5136
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_3
+    - name: santa_on_fire_785_571_3
       rect:
         serializedVersion: 2
-        x: 2340
-        y: 5468
-        width: 780
-        height: 682
+        x: 2355
+        y: 5136
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_4
+    - name: santa_on_fire_785_571_4
       rect:
         serializedVersion: 2
-        x: 3120
-        y: 5468
-        width: 780
-        height: 682
+        x: 3140
+        y: 5136
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_5
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 4786
-        width: 780
-        height: 682
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_6
-      rect:
-        serializedVersion: 2
-        x: 780
-        y: 4786
-        width: 780
-        height: 682
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_7
-      rect:
-        serializedVersion: 2
-        x: 1560
-        y: 4786
-        width: 780
-        height: 682
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_8
-      rect:
-        serializedVersion: 2
-        x: 2340
-        y: 4786
-        width: 780
-        height: 682
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_9
-      rect:
-        serializedVersion: 2
-        x: 3120
-        y: 4786
-        width: 780
-        height: 682
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_10
+    - name: santa_on_fire_785_571_5
       rect:
         serializedVersion: 2
         x: 0
-        y: 4104
-        width: 780
-        height: 682
+        y: 4565
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_11
+    - name: santa_on_fire_785_571_6
       rect:
         serializedVersion: 2
-        x: 780
-        y: 4104
-        width: 780
-        height: 682
+        x: 785
+        y: 4565
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_12
+    - name: santa_on_fire_785_571_7
       rect:
         serializedVersion: 2
-        x: 1560
-        y: 4104
-        width: 780
-        height: 682
+        x: 1570
+        y: 4565
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_13
+    - name: santa_on_fire_785_571_8
       rect:
         serializedVersion: 2
-        x: 2340
-        y: 4104
-        width: 780
-        height: 682
+        x: 2355
+        y: 4565
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_14
+    - name: santa_on_fire_785_571_9
       rect:
         serializedVersion: 2
-        x: 3120
-        y: 4104
-        width: 780
-        height: 682
+        x: 3140
+        y: 4565
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_15
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 3422
-        width: 780
-        height: 682
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_16
-      rect:
-        serializedVersion: 2
-        x: 780
-        y: 3422
-        width: 780
-        height: 682
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_17
-      rect:
-        serializedVersion: 2
-        x: 1560
-        y: 3422
-        width: 780
-        height: 682
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_18
-      rect:
-        serializedVersion: 2
-        x: 2340
-        y: 3422
-        width: 780
-        height: 682
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_19
-      rect:
-        serializedVersion: 2
-        x: 3120
-        y: 3422
-        width: 780
-        height: 682
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_20
+    - name: santa_on_fire_785_571_10
       rect:
         serializedVersion: 2
         x: 0
-        y: 2740
-        width: 780
-        height: 682
+        y: 3994
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_21
+    - name: santa_on_fire_785_571_11
       rect:
         serializedVersion: 2
-        x: 780
-        y: 2740
-        width: 780
-        height: 682
+        x: 785
+        y: 3994
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_22
+    - name: santa_on_fire_785_571_12
       rect:
         serializedVersion: 2
-        x: 1560
-        y: 2740
-        width: 780
-        height: 682
+        x: 1570
+        y: 3994
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_23
+    - name: santa_on_fire_785_571_13
       rect:
         serializedVersion: 2
-        x: 2340
-        y: 2740
-        width: 780
-        height: 682
+        x: 2355
+        y: 3994
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_24
+    - name: santa_on_fire_785_571_14
       rect:
         serializedVersion: 2
-        x: 3120
-        y: 2740
-        width: 780
-        height: 682
+        x: 3140
+        y: 3994
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_25
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2058
-        width: 780
-        height: 682
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_26
-      rect:
-        serializedVersion: 2
-        x: 780
-        y: 2058
-        width: 780
-        height: 682
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_27
-      rect:
-        serializedVersion: 2
-        x: 1560
-        y: 2058
-        width: 780
-        height: 682
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_28
-      rect:
-        serializedVersion: 2
-        x: 2340
-        y: 2058
-        width: 780
-        height: 682
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_29
-      rect:
-        serializedVersion: 2
-        x: 3120
-        y: 2058
-        width: 780
-        height: 682
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_30
+    - name: santa_on_fire_785_571_15
       rect:
         serializedVersion: 2
         x: 0
-        y: 1376
-        width: 780
-        height: 682
+        y: 3423
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_31
+    - name: santa_on_fire_785_571_16
       rect:
         serializedVersion: 2
-        x: 780
-        y: 1376
-        width: 780
-        height: 682
+        x: 785
+        y: 3423
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_32
+    - name: santa_on_fire_785_571_17
       rect:
         serializedVersion: 2
-        x: 1560
-        y: 1376
-        width: 780
-        height: 682
+        x: 1570
+        y: 3423
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_33
+    - name: santa_on_fire_785_571_18
       rect:
         serializedVersion: 2
-        x: 2340
-        y: 1376
-        width: 780
-        height: 682
+        x: 2355
+        y: 3423
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_34
+    - name: santa_on_fire_785_571_19
       rect:
         serializedVersion: 2
-        x: 3120
-        y: 1376
-        width: 780
-        height: 682
+        x: 3140
+        y: 3423
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_35
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 694
-        width: 780
-        height: 682
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_36
-      rect:
-        serializedVersion: 2
-        x: 780
-        y: 694
-        width: 780
-        height: 682
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_37
-      rect:
-        serializedVersion: 2
-        x: 1560
-        y: 694
-        width: 780
-        height: 682
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_38
-      rect:
-        serializedVersion: 2
-        x: 2340
-        y: 694
-        width: 780
-        height: 682
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_39
-      rect:
-        serializedVersion: 2
-        x: 3120
-        y: 694
-        width: 780
-        height: 682
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_40
+    - name: santa_on_fire_785_571_20
       rect:
         serializedVersion: 2
         x: 0
-        y: 12
-        width: 780
-        height: 682
+        y: 2852
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_41
+    - name: santa_on_fire_785_571_21
       rect:
         serializedVersion: 2
-        x: 780
-        y: 12
-        width: 780
-        height: 682
+        x: 785
+        y: 2852
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_42
+    - name: santa_on_fire_785_571_22
       rect:
         serializedVersion: 2
-        x: 1560
-        y: 12
-        width: 780
-        height: 682
+        x: 1570
+        y: 2852
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_43
+    - name: santa_on_fire_785_571_23
       rect:
         serializedVersion: 2
-        x: 2340
-        y: 12
-        width: 780
-        height: 682
+        x: 2355
+        y: 2852
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-    - name: santa_on_fire_44
+    - name: santa_on_fire_785_571_24
       rect:
         serializedVersion: 2
-        x: 3120
-        y: 12
-        width: 780
-        height: 682
+        x: 3140
+        y: 2852
+        width: 785
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: santa_on_fire_785_571_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2281
+        width: 785
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: santa_on_fire_785_571_26
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 2281
+        width: 785
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: santa_on_fire_785_571_27
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 2281
+        width: 785
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: santa_on_fire_785_571_28
+      rect:
+        serializedVersion: 2
+        x: 2355
+        y: 2281
+        width: 785
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: santa_on_fire_785_571_29
+      rect:
+        serializedVersion: 2
+        x: 3140
+        y: 2281
+        width: 785
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: santa_on_fire_785_571_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1710
+        width: 785
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: santa_on_fire_785_571_31
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1710
+        width: 785
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: santa_on_fire_785_571_32
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 1710
+        width: 785
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: santa_on_fire_785_571_33
+      rect:
+        serializedVersion: 2
+        x: 2355
+        y: 1710
+        width: 785
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: santa_on_fire_785_571_34
+      rect:
+        serializedVersion: 2
+        x: 3140
+        y: 1710
+        width: 785
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: santa_on_fire_785_571_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1139
+        width: 785
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: santa_on_fire_785_571_36
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 1139
+        width: 785
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: santa_on_fire_785_571_37
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 1139
+        width: 785
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: santa_on_fire_785_571_38
+      rect:
+        serializedVersion: 2
+        x: 2355
+        y: 1139
+        width: 785
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: santa_on_fire_785_571_39
+      rect:
+        serializedVersion: 2
+        x: 3140
+        y: 1139
+        width: 785
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: santa_on_fire_785_571_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 568
+        width: 785
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: santa_on_fire_785_571_41
+      rect:
+        serializedVersion: 2
+        x: 785
+        y: 568
+        width: 785
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: santa_on_fire_785_571_42
+      rect:
+        serializedVersion: 2
+        x: 1570
+        y: 568
+        width: 785
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: santa_on_fire_785_571_43
+      rect:
+        serializedVersion: 2
+        x: 2355
+        y: 568
+        width: 785
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: santa_on_fire_785_571_44
+      rect:
+        serializedVersion: 2
+        x: 3140
+        y: 568
+        width: 785
+        height: 571
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
