@@ -30,6 +30,7 @@ public class FlareBehaviour : MonoBehaviour {
 	void OnCollisionEnter2D(Collision2D collision) {
 		if(collision.gameObject.name == "Santa") {
 			PushSanta(collision.gameObject.GetComponent<Rigidbody2D>());
+			collision.gameObject.GetComponent<SantasAnimation>().BurnSanta();
 		}
 	}
 
