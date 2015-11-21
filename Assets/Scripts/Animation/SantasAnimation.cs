@@ -21,7 +21,6 @@ public class SantasAnimation : MonoBehaviour {
 	void PitOutSanta() {
 		if (animator.GetCurrentAnimatorStateInfo(0).normalizedTime > 1 ) {
 			animator.Play ("SantaIdle");
-			Debug.Log("111");
 		}
 	}
 

@@ -11,12 +11,14 @@ public class FallingWallsBehaviour : MonoBehaviour {
 	private float lastFrameTime = 0.0f;
 	private float angle;
 	public bool isWallFall = false;
+	private bool isWallStayStrict = true;
 
 	void Start() {
 		angle = wallAngles.y;
 	}
 
 	void Update () {
+		if (isWallStayStrict) return;
 		if (Time.time < lastFrameTime + frameTick) return;
 		lastFrameTime = Time.time;
 		moveWall ();
@@ -32,6 +34,7 @@ public class FallingWallsBehaviour : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D collision) {
 		if (collision.gameObject.name == "Santa") {
+			isWallStayStrict = false;
 			Sprite currentSprite = gameObject.GetComponent<SpriteRenderer>().sprite;
 			gameObject.GetComponent<SpriteRenderer>().sprite = currentSprite == firstSprite ? secondSprite : firstSprite;
 			isWallFall = !isWallFall;
