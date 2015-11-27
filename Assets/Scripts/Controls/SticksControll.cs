@@ -3,7 +3,7 @@ using System.Collections;
 
 public class SticksControll : MonoBehaviour {
 
-	public float force = 1000;	// Сила удара
+	public Vector2 force = new Vector2 (80, 60);	// Сила удара
 	public Vector2 leftStickAngles = new Vector2(-44, 84);	// Углы для левого стика
 	public Vector2 rightStickAngles = new Vector2(-84, 44);
 	public GameObject leftStick, rightStick;
@@ -16,6 +16,8 @@ public class SticksControll : MonoBehaviour {
 	public GameObject leftStickSolid, rightStickSolid;
 	private bool isCollisionIgnored = false;
 	private float lastCollisionIgnoreTime = 0f;
+	private bool leftStickGoinDown = false;
+	private bool rightStickGoinDown = false;
 
 	
 	void Start() {
@@ -45,15 +47,21 @@ public class SticksControll : MonoBehaviour {
 	}
 
 	void MoveSticks() {
+		leftStickGoinDown = false;
+		rightStickGoinDown = false;
 		if (isLeftStickPressed && leftStickAngle < leftStickAngles.y)
 			leftStickAngle += stickSpeed;
-		else if (!isLeftStickPressed && leftStickAngle > leftStickAngles.x)
+		else if (!isLeftStickPressed && leftStickAngle > leftStickAngles.x) {
+			leftStickGoinDown = true;
 			leftStickAngle -= stickSpeed;
+		}
 
 		if (isRightStickPressed && rightStickAngle > rightStickAngles.x)
 			rightStickAngle -= stickSpeed;
-		else if (!isRightStickPressed && rightStickAngle < rightStickAngles.y)
+		else if (!isRightStickPressed && rightStickAngle < rightStickAngles.y) {
+			rightStickGoinDown = true;
 			rightStickAngle += stickSpeed;
+		}
 
 		if (leftStickAngle < leftStickAngles.x)
 			leftStickAngle = leftStickAngles.x;
@@ -70,28 +78,23 @@ public class SticksControll : MonoBehaviour {
 	}
 
 	public void Hit(Vector2 power, GameObject stick, GameObject solid) {
-		if (stick == leftStick) {
-			if (leftStickAngle >= leftStickAngles.y || leftStickAngle <= leftStickAngles.x)
+		if (stick == leftStick) 
+			if (leftStickAngle >= leftStickAngles.y || leftStickAngle <= leftStickAngles.x || leftStickGoinDown)
 				return;
-			power = CalculatePower(leftStickAngle - leftStickAngles.x);
-		}
-		if (stick == rightStick) {
-			if (rightStickAngle >= rightStickAngles.y || rightStickAngle <= rightStickAngles.x)
+		if (stick == rightStick)
+			if (rightStickAngle >= rightStickAngles.y || rightStickAngle <= rightStickAngles.x || rightStickGoinDown)
 				return;
-			power = CalculatePower(rightStickAngle - rightStickAngles.x);
-			power.x *= -1;
-		}
+		power = CalculatePower(stick, santa);
 		Physics2D.IgnoreCollision(santa.GetComponent<Collider2D>(), solid.GetComponent<Collider2D>());
 		isCollisionIgnored = true; 
 		lastCollisionIgnoreTime = Time.time;
 		santa.GetComponent<Rigidbody2D> ().AddForce (power);
 	}
 
-	public Vector2 CalculatePower(float angle) {
-		if (angle < 40)
-			return new Vector2 (force / 2, force / 4);
-		if (angle < 80)
-			return new Vector2 ( force / 5, force / 3);
-		return new Vector2( force / 10, force / 2);
+	public Vector2 CalculatePower(GameObject stick, GameObject santa) {
+		var xSpeed = (Mathf.Abs(santa.transform.position.x) + Mathf.Abs(stick.transform.position.x)) * force.x;
+		if (santa.transform.position.x < stick.transform.position.x)
+		    xSpeed *= -1;
+		return new Vector2 (xSpeed, (Mathf.Abs(santa.transform.position.y) + Mathf.Abs(stick.transform.position.y)) * force.y);
 	}
 }

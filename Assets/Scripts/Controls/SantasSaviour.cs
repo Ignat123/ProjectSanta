@@ -6,6 +6,7 @@ public class SantasSaviour : MonoBehaviour {
 	private int stuckCount = 0;
 	public float timeTick = 0.04f;
 	private float lastFrameTime = 0.0f;
+	private bool underPressure = false;
 	public Vector2 limitPositions = new Vector2(0.0f, 0.0f);
 	
 	void Start() {
@@ -26,6 +27,7 @@ public class SantasSaviour : MonoBehaviour {
 		if (gameObjectLastPosition != gameObject.transform.position)
 			gameObjectLastPosition = gameObject.transform.position;
 		else {
+			if (underPressure) return;
 			stuckCount++;
 			if (stuckCount >= 2) {
 				Debug.Log("Unstuck santa");
@@ -35,5 +37,9 @@ public class SantasSaviour : MonoBehaviour {
 				transform.position = new Vector3(transform.position.x + xSpeed, transform.position.y + ySpeed, 0);
 			}
 		}
+	}
+
+	public void SetPressure(bool value) {
+		underPressure = value;
 	}
 }
