@@ -7,7 +7,7 @@ public class FlareBehaviour : MonoBehaviour {
 	public float minAngle = -58.0f;  	// Минимальный угол огонька
 	public float maxAngle = 2.0f;		// Максимальный угол огонька
 	public float angleSpeed = -1.0f;	// Скороть изменения угла огонька
-	public float power = 1000.0f;		// Сила ускорения Санты при столкновении с огнём
+	public float power = 20.0f;		// Сила ускорения Санты при столкновении с огнём
 
 	public float currentAngle = 2.0f;	// Текущий угол поворота огонька
 	private float lastFrameTime = 0.0f;	//Время последнего периода перемещения огонька
@@ -27,7 +27,7 @@ public class FlareBehaviour : MonoBehaviour {
 	}
 
 	// Отвечает за столкновения
-	void OnCollisionEnter2D(Collision2D collision) {
+	void OnTriggerEnter2D(Collider2D collision) {
 		if(collision.gameObject.name == "Santa") {
 			PushSanta(collision.gameObject.GetComponent<Rigidbody2D>());
 			collision.gameObject.GetComponent<SantasAnimation>().BurnSanta();
@@ -36,7 +36,7 @@ public class FlareBehaviour : MonoBehaviour {
 
 	// Толкает Санту в определённом направлении
 	void PushSanta(Rigidbody2D santasRigidbody) {
-		santasRigidbody.AddForce(CalculateForceVector());
+		santasRigidbody.velocity = (CalculateForceVector ());
 	}
 
 	// Высчитывает вектор отскока Cанты

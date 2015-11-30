@@ -14,7 +14,7 @@ public class FallingWallsBehaviour : MonoBehaviour {
 	private bool isWallStayStrict = true;
 
 	void Start() {
-		angle = wallAngles.y;
+		angle = 0;
 	}
 
 	void Update () {
