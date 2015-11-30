@@ -22,6 +22,7 @@ public class AnimatedBounce : MonoBehaviour {
 			animator.Play(animationName, -1, 0);
 			Instantiate(scorePrebaf, transform.position, new Quaternion());
 			scoreScript.IncreaseScore(scoreValue);
+			this.GetComponent<FallingWallsBehaviour>().PushWall();
 		}
 	}
 }

@@ -1,9 +1,21 @@
 fileFormatVersion: 2
 guid: 1ae52a488085b074cbc2b3e2bc7cdcf5
-timeCreated: 1448823007
+timeCreated: 1448900790
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: smoge_500_475_0
+    21300002: smoge_500_475_1
+    21300004: smoge_500_475_2
+    21300006: smoge_500_475_3
+    21300008: smoge_500_475_4
+    21300010: smoge_500_475_5
+    21300012: smoge_500_475_6
+    21300014: smoge_500_475_7
+    21300016: smoge_500_475_8
+    21300018: smoge_500_475_9
+    21300020: smoge_500_475_10
+    21300022: smoge_500_475_11
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -30,14 +42,14 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 16
     mipBias: -1
     wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   rGBM: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -48,7 +60,127 @@ TextureImporter:
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
-    sprites: []
+    sprites:
+    - name: smoge_500_475_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1425
+        width: 500
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoge_500_475_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1425
+        width: 500
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoge_500_475_2
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1425
+        width: 500
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoge_500_475_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 950
+        width: 500
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoge_500_475_4
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 950
+        width: 500
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoge_500_475_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 950
+        width: 500
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoge_500_475_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 475
+        width: 500
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoge_500_475_7
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 475
+        width: 500
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoge_500_475_8
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 475
+        width: 500
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoge_500_475_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 500
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoge_500_475_10
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 0
+        width: 500
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: smoge_500_475_11
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 500
+        height: 475
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
   assetBundleName: 

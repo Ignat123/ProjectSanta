@@ -5,13 +5,13 @@ public class FallingWallsBehaviour : MonoBehaviour {
 	public GameObject fallingWall;
 	public float fallingSpeed = 3.0f;
 	public Vector2 wallAngles;
-	public Sprite firstSprite;
-	public Sprite secondSprite;
 	public float frameTick = 0.04f;
 	private float lastFrameTime = 0.0f;
 	private float angle;
 	public bool isWallFall = false;
 	private bool isWallStayStrict = true;
+	private float wallStayStricktTime = 0.0f;
+	public float maxStayStrictTime = 5.0f;
 
 	void Start() {
 		angle = 0;
@@ -21,23 +21,38 @@ public class FallingWallsBehaviour : MonoBehaviour {
 		if (isWallStayStrict) return;
 		if (Time.time < lastFrameTime + frameTick) return;
 		lastFrameTime = Time.time;
-		moveWall ();
+		if (maxStayStrictTime < wallStayStricktTime) {
+			ReturnWall ();
+			return;
+		}
+		MoveWall ();
 	}
 
-	void moveWall(){
+	void ReturnWall() {
+		if (isWallFall && angle < 0 + fallingSpeed) {
+			angle += fallingSpeed;
+		} else if (!isWallFall && angle > 0 - fallingSpeed)
+			angle -= fallingSpeed;
+		else {
+			angle = 0;
+			isWallStayStrict = true;
+		}
+		fallingWall.transform.rotation = Quaternion.Euler (fallingWall.transform.rotation.x, fallingWall.transform.rotation.y, angle);
+	}
+
+	void MoveWall(){
 		if (isWallFall && angle > wallAngles.x) {
 			angle -= fallingSpeed;
 		} else if (!isWallFall && angle < wallAngles.y)
 			angle += fallingSpeed;
+		else
+			wallStayStricktTime += frameTick;
 		fallingWall.transform.rotation = Quaternion.Euler (fallingWall.transform.rotation.x, fallingWall.transform.rotation.y, angle);
 	}
 
-	void OnTriggerEnter2D(Collider2D collision) {
-		if (collision.gameObject.name == "Santa") {
-			isWallStayStrict = false;
-			Sprite currentSprite = gameObject.GetComponent<SpriteRenderer>().sprite;
-			gameObject.GetComponent<SpriteRenderer>().sprite = currentSprite == firstSprite ? secondSprite : firstSprite;
-			isWallFall = !isWallFall;
-		}
+	public void PushWall() {
+		wallStayStricktTime = 0.0f;
+		isWallStayStrict = false;
+		isWallFall = !isWallFall;
 	}
 }
